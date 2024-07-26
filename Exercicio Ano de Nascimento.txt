@@ -1,0 +1,11 @@
+nomeCompleto = input("Digite seu nome completo: ")
+while True:
+    try:
+        anoNascimento = int(input("Digite o ano de nascimento: "))
+        if 1922 <= anoNascimento <= 2021:
+            print(f"Seu nome completo e {nomeCompleto} e você tem {2020 - anoNascimento}")
+            break
+        else:
+            print("Ano de nascimento deve ser entre 1922 e 2021.")
+    except ValueError:
+        print("Entrada inválida. Por favor, digite o se ano de nascimento.")
